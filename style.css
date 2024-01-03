@@ -1,0 +1,940 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+.grid-container1{
+    display: grid;
+    grid-template-columns: 10px 2px 1px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "span titulo span"
+    ;
+}
+
+h1{
+    grid-area: titulo;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+p{
+    grid-area: frase;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.grid-container2{
+    display: grid;
+    grid-template-columns: 1px 2px 1px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "span frase span";
+}
+.grid-container3{
+  display: grid;
+  grid-column-gap: 180px;
+  grid-template-columns: 503px 500px 500px;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "primeiro segundo terceiro"
+  "info1 info2 info3"
+  "botao1 botao2 botao3"
+  ;
+}
+h2{
+  grid-area: info1;
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+h3{
+  grid-area: info2;
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+h4{
+  grid-area: info3;
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+#img1{
+    width: 100%;
+    grid-area: primeiro;
+    background-color: green;
+}
+#img2{
+    width: 100%;
+    grid-area: segundo;
+    background-color: yellow;
+}
+#img3{
+    width: 100%;
+    grid-area: terceiro;
+    background-color: red;
+}
+#botao1{
+    grid-area: botao1;
+    background-color: green;
+    width: 500px;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#botao2{
+    grid-area: botao2;
+    background-color: green;
+    width: 500px;
+    height: 60px;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+#botao3{
+    grid-area: botao3;
+    background-color: green;
+    width: 500px;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.grid-container4{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "cima cima cima"
+  "baixo baixo baixo";
+  background-color: rgb(203, 202, 202);
+}
+h5{
+  font-size: 40px;
+  font-family: sans-serif;
+  grid-area: cima;
+  color: black;
+}
+#texto2{
+  font-size: 30px;
+  font-family: sans-serif;
+  grid-area: baixo;
+  color: black;
+}
+.grid-container5{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+  "primeiro1 primeiro1 primeiro1 primeiro1"
+  "padrao padrao padrao redes"
+  "padrao1 padrao1 padrao1 redes"
+  ;
+  background-color: #333;
+}
+h6{
+  font-size: 40px;
+  font-family: sans-serif;
+  grid-area: primeiro1;
+  color: white;
+}
+label{
+  font-size: 30px;
+  grid-area: padrao;
+  font-family: sans-serif;
+  color: white;
+}
+input{
+  height: 30px;
+  grid-area: padrao1
+}
+#facebook{
+  width: 60px;
+  grid-area: facebook;
+}
+#insta{
+  width: 60px;
+  grid-area: insta;
+}
+#zap{
+  width: 60px;
+  grid-area: zap;
+}
+#sociais{
+  grid-area: redes;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  /* Extra small devices (phones, 600px and down) */
+    .grid-container1{
+      display: grid;
+      grid-template-columns: 7px 4px 9px;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: 
+      "span titulo span"
+      ;
+  }
+  
+  h1{
+      grid-area: titulo;
+      font-family: sans-serif;
+      font-size: 30px;
+  }
+  .grid-container2{
+      display: grid;
+      grid-template-columns: 1px 2px 1px;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: 
+      "span frase span";
+  }
+  p{
+      grid-area: frase;
+      font-family: sans-serif;
+      font-size: 20px;
+  }
+  
+  .grid-container3{
+    display: grid;
+    grid-column-gap: 12px;
+    grid-template-columns: 105px 105px 105px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "primeiro segundo terceiro"
+    "info1 info2 info3"
+    "botao1 botao2 botao3"
+    ;
+  }
+  h2{
+    grid-area: info1;
+    text-align: center;
+    font-size: 10px;
+    font-family: sans-serif;
+  }
+  h3{
+    grid-area: info2;
+    text-align: center;
+    font-size: 10px;
+    font-family: sans-serif;
+  }
+  h4{
+    grid-area: info3;
+    text-align: center;
+    font-size: 10px;
+    font-family: sans-serif;
+  }
+  #img1{
+      width: 100%;
+      grid-area: primeiro;
+      background-color: green;
+  }
+  #img2{
+      width: 100%;
+      grid-area: segundo;
+      background-color: yellow;
+  }
+  #img3{
+      width: 100%;
+      grid-area: terceiro;
+      background-color: red;
+  }
+  #botao1{
+      grid-area: botao1;
+      background-color: green;
+      width: 100px;
+      height: 30px;
+      color: white;
+      border: none;
+      text-decoration: none;
+      text-align: center;
+      font-size: 10px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  #botao2{
+      grid-area: botao2;
+      background-color: green;
+      width: 100px;
+      height: 30px;
+      color: white;
+      border: none;
+      text-decoration: none;
+      text-align: center;
+      font-size: 10px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  
+  }
+  #botao3{
+      grid-area: botao3;
+      background-color: green;
+      width: 100px;
+      height: 30px;
+      color: white;
+      border: none;
+      text-decoration: none;
+      text-align: center;
+      font-size: 10px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .grid-container4{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "cima cima cima"
+    "baixo baixo baixo";
+    background-color: rgb(203, 202, 202);
+  }
+  h5{
+    font-size: 40px;
+    font-family: sans-serif;
+    grid-area: cima;
+    color: black;
+  }
+  #texto2{
+    font-size: 30px;
+    font-family: sans-serif;
+    grid-area: baixo;
+    color: black;
+  }
+  .grid-container5{
+    display: grid;
+    grid-template-columns: auto auto 80px auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "primeiro1 primeiro1 primeiro1 primeiro1"
+    "padrao padrao padrao redes"
+    "padrao1 padrao1 padrao1 redes"
+    ;
+    background-color: #333;
+  }
+  h6{
+    font-size: 40px;
+    font-family: sans-serif;
+    grid-area: primeiro1;
+    color: white;
+  }
+  label{
+    font-size: 20px;
+    grid-area: padrao;
+    font-family: sans-serif;
+    color: white;
+  }
+  input{
+    height: 30px;
+    grid-area: padrao1
+  }
+  #facebook{
+    width: 60px;
+    grid-area: facebook;
+  }
+  #insta{
+    width: 60px;
+    grid-area: insta;
+  }
+  #zap{
+    width: 60px;
+    grid-area: zap;
+  }
+  #sociais{
+    grid-area: redes;
+  
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  .grid-container1{
+    display: grid;
+    grid-template-columns: 7px 4px 9px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "span titulo span"
+    ;
+}
+
+h1{
+    grid-area: titulo;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.grid-container2{
+    display: grid;
+    grid-template-columns: 1px 2px 1px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "span frase span";
+}
+p{
+    grid-area: frase;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.grid-container3{
+  display: grid;
+  grid-column-gap: 12px;
+  grid-template-columns: 105px 105px 105px;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "primeiro segundo terceiro"
+  "info1 info2 info3"
+  "botao1 botao2 botao3"
+  ;
+}
+h2{
+  grid-area: info1;
+  text-align: center;
+  font-size: 10px;
+  font-family: sans-serif;
+}
+h3{
+  grid-area: info2;
+  text-align: center;
+  font-size: 10px;
+  font-family: sans-serif;
+}
+h4{
+  grid-area: info3;
+  text-align: center;
+  font-size: 10px;
+  font-family: sans-serif;
+}
+#img1{
+    width: 100%;
+    grid-area: primeiro;
+    background-color: green;
+}
+#img2{
+    width: 100%;
+    grid-area: segundo;
+    background-color: yellow;
+}
+#img3{
+    width: 100%;
+    grid-area: terceiro;
+    background-color: red;
+}
+#botao1{
+    grid-area: botao1;
+    background-color: green;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#botao2{
+    grid-area: botao2;
+    background-color: green;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+#botao3{
+    grid-area: botao3;
+    background-color: green;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.grid-container4{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "cima cima cima"
+  "baixo baixo baixo";
+  background-color: rgb(203, 202, 202);
+}
+h5{
+  font-size: 40px;
+  font-family: sans-serif;
+  grid-area: cima;
+  color: black;
+}
+#texto2{
+  font-size: 30px;
+  font-family: sans-serif;
+  grid-area: baixo;
+  color: black;
+}
+.grid-container5{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+  "primeiro1 primeiro1 primeiro1 primeiro1"
+  "padrao padrao padrao redes"
+  "padrao1 padrao1 padrao1 redes"
+  ;
+  background-color: #333;
+}
+h6{
+  font-size: 40px;
+  font-family: sans-serif;
+  grid-area: primeiro1;
+  color: white;
+}
+label{
+  font-size: 30px;
+  grid-area: padrao;
+  font-family: sans-serif;
+  color: white;
+}
+input{
+  height: 30px;
+  grid-area: padrao1
+}
+#facebook{
+  width: 60px;
+  grid-area: facebook;
+}
+#insta{
+  width: 60px;
+  grid-area: insta;
+}
+#zap{
+  width: 60px;
+  grid-area: zap;
+}
+#sociais{
+  grid-area: redes;
+
+}
+
+}
+
+
+@media only screen and (min-width: 768px){
+  /* Medium devices (landscape tablets, 768px and up) */
+  .grid-container1{
+    display: grid;
+    grid-template-columns: 7px 4px 9px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "span titulo span"
+    ;
+}
+
+h1{
+    grid-area: titulo;
+    font-family: sans-serif;
+    font-size: 80px;
+}
+.grid-container2{
+    display: grid;
+    grid-template-columns: 1px 2px 1px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "span frase span";
+}
+p{
+    grid-area: frase;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+.grid-container3{
+  display: grid;
+  grid-column-gap: 52px;
+  grid-template-columns: 225px 225px 225px;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "primeiro segundo terceiro"
+  "info1 info2 info3"
+  "botao1 botao2 botao3"
+  ;
+}
+h2{
+  grid-area: info1;
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+h3{
+  grid-area: info2;
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+h4{
+  grid-area: info3;
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+#img1{
+    width: 100%;
+    grid-area: primeiro;
+    background-color: green;
+}
+#img2{
+    width: 100%;
+    grid-area: segundo;
+    background-color: yellow;
+}
+#img3{
+    width: 100%;
+    grid-area: terceiro;
+    background-color: red;
+}
+#botao1{
+    grid-area: botao1;
+    background-color: green;
+    width: 225px;
+    height: 30px;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#botao2{
+    grid-area: botao2;
+    background-color: green;
+    width: 225px;
+    height: 30px;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+#botao3{
+    grid-area: botao3;
+    background-color: green;
+    width: 225px;
+    height: 30px;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.grid-container4{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "cima cima cima"
+  "baixo baixo baixo";
+  background-color: rgb(203, 202, 202);
+}
+h5{
+  font-size: 40px;
+  font-family: sans-serif;
+  grid-area: cima;
+  color: black;
+}
+#texto2{
+  font-size: 30px;
+  font-family: sans-serif;
+  grid-area: baixo;
+  color: black;
+}
+.grid-container5{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+  "primeiro1 primeiro1 primeiro1 primeiro1"
+  "padrao padrao padrao redes"
+  "padrao1 padrao1 padrao1 redes"
+  ;
+  background-color: #333;
+}
+h6{
+  font-size: 40px;
+  font-family: sans-serif;
+  grid-area: primeiro1;
+  color: white;
+}
+label{
+  font-size: 30px;
+  grid-area: padrao;
+  font-family: sans-serif;
+  color: white;
+}
+input{
+  height: 30px;
+  grid-area: padrao1
+}
+#facebook{
+  width: 60px;
+  grid-area: facebook;
+}
+#insta{
+  width: 60px;
+  grid-area: insta;
+}
+#zap{
+  width: 60px;
+  grid-area: zap;
+}
+#sociais{
+  grid-area: redes;
+
+}
+
+}
+@media only screen and (min-width: 992px) {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+.grid-container1{
+    display: grid;
+    grid-template-columns: 10px 2px 1px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "span titulo span"
+    ;
+}
+
+h1{
+    grid-area: titulo;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+p{
+    grid-area: frase;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.grid-container2{
+    display: grid;
+    grid-template-columns: 1px 2px 1px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "span frase span";
+}
+.grid-container3{
+  display: grid;
+  grid-column-gap: 180px;
+  grid-template-columns: 503px 500px 500px;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "primeiro segundo terceiro"
+  "info1 info2 info3"
+  "botao1 botao2 botao3"
+  ;
+}
+h2{
+  grid-area: info1;
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+h3{
+  grid-area: info2;
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+h4{
+  grid-area: info3;
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+#img1{
+    width: 100%;
+    grid-area: primeiro;
+    background-color: green;
+}
+#img2{
+    width: 100%;
+    grid-area: segundo;
+    background-color: yellow;
+}
+#img3{
+    width: 100%;
+    grid-area: terceiro;
+    background-color: red;
+}
+#botao1{
+    grid-area: botao1;
+    background-color: green;
+    width: 500px;
+    height: 60px;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#botao2{
+    grid-area: botao2;
+    background-color: green;
+    width: 500px;
+    height: 60px;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+#botao3{
+    grid-area: botao3;
+    background-color: green;
+    width: 500px;
+    height: 60px;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.grid-container4{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "cima cima cima"
+  "baixo baixo baixo";
+  background-color: rgb(203, 202, 202);
+}
+h5{
+  font-size: 40px;
+  font-family: sans-serif;
+  grid-area: cima;
+  color: black;
+}
+#texto2{
+  font-size: 30px;
+  font-family: sans-serif;
+  grid-area: baixo;
+  color: black;
+}
+.grid-container5{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+  "primeiro1 primeiro1 primeiro1 primeiro1"
+  "padrao padrao padrao redes"
+  "padrao1 padrao1 padrao1 redes"
+  ;
+  background-color: #333;
+}
+h6{
+  font-size: 40px;
+  font-family: sans-serif;
+  grid-area: primeiro1;
+  color: white;
+}
+label{
+  font-size: 30px;
+  grid-area: padrao;
+  font-family: sans-serif;
+  color: white;
+}
+input{
+  height: 30px;
+  grid-area: padrao1
+}
+#facebook{
+  width: 60px;
+  grid-area: facebook;
+}
+#insta{
+  width: 60px;
+  grid-area: insta;
+}
+#zap{
+  width: 60px;
+  grid-area: zap;
+}
+#sociais{
+  grid-area: redes;
+
+}
+}
